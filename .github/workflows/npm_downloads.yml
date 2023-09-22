@@ -104,5 +104,6 @@ jobs:
           webhook_url: ${{ secrets.STDLIB_NPM_DOWNLOADS_URL }}
           webhook_secret: ${{ secrets.STDLIB_WEBHOOK_SECRET }}
           data: '{ "downloads": ${{ steps.download_data.outputs.data }} }'
+          verbose: true
         timeout-minutes: 5
         if: success()
