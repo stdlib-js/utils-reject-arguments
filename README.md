@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import rejectArguments from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-reject-arguments@deno/mod.js';
+import rejectArguments from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-reject-arguments@v0.1.0-deno/mod.js';
 ```
 
 #### rejectArguments( fcn, predicate\[, thisArg] )
@@ -137,7 +137,7 @@ var out = bar( 1, 2, 3 );
 ```javascript
 import filledarrayBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled-by@deno/mod.js';
 import add from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-ops-add@deno/mod.js';
-import rejectArguments from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-reject-arguments@deno/mod.js';
+import rejectArguments from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-reject-arguments@v0.1.0-deno/mod.js';
 
 function fill( i ) {
     return i;
