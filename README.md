@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import rejectArguments from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-reject-arguments@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/utils-reject-arguments/tags). For example,
+
+```javascript
 import rejectArguments from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-reject-arguments@v0.1.0-esm/index.mjs';
 ```
 
@@ -142,7 +147,7 @@ var out = bar( 1, 2, 3 );
 
 import filledarrayBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled-by@esm/index.mjs';
 import add from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-ops-add@esm/index.mjs';
-import rejectArguments from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-reject-arguments@v0.1.0-esm/index.mjs';
+import rejectArguments from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-reject-arguments@esm/index.mjs';
 
 function fill( i ) {
     return i;
