@@ -45,38 +45,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils-reject-arguments
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-rejectArguments = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-reject-arguments@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var rejectArguments = require( 'path/to/vendor/umd/utils-reject-arguments/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-reject-arguments@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.rejectArguments;
-})();
-</script>
+var rejectArguments = require( '@stdlib/utils-reject-arguments' );
 ```
 
 #### rejectArguments( fcn, predicate\[, thisArg] )
@@ -158,15 +150,10 @@ var out = bar( 1, 2, 3 );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-filled-by@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-ops-add@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-reject-arguments@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var filledarrayBy = require( '@stdlib/array-filled-by' );
+var add = require( '@stdlib/math-base-ops-add' );
+var rejectArguments = require( '@stdlib/utils-reject-arguments' );
 
 function fill( i ) {
     return i;
@@ -190,11 +177,6 @@ for ( i = 0; i < x.length-1; i++ ) {
     f = rejectArguments( add, factory( i, i+2 ) );
     console.log( 'sum(x_%d, x_%d) = %d', i, i+1, f.apply( null, x ) );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -256,8 +238,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/utils-reject-arguments.svg
 [npm-url]: https://npmjs.org/package/@stdlib/utils-reject-arguments
 
-[test-image]: https://github.com/stdlib-js/utils-reject-arguments/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/utils-reject-arguments/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/utils-reject-arguments/actions/workflows/test.yml/badge.svg?branch=v0.1.1
+[test-url]: https://github.com/stdlib-js/utils-reject-arguments/actions/workflows/test.yml?query=branch:v0.1.1
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/utils-reject-arguments/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/utils-reject-arguments?branch=main
