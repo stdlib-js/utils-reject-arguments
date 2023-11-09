@@ -195,6 +195,13 @@ for ( i = 0; i < x.length-1; i++ ) {
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/utils-filter-arguments`][@stdlib/utils/filter-arguments]</span><span class="delimiter">: </span><span class="description">create a function that invokes a provided function according to a predicate function.</span>
+-   <span class="package-name">[`@stdlib/utils-mask-arguments`][@stdlib/utils/mask-arguments]</span><span class="delimiter">: </span><span class="description">create a function that invokes a provided function according to an argument mask.</span>
+
 </section>
 
 <!-- /.related -->
@@ -267,6 +274,14 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [branches-url]: https://github.com/stdlib-js/utils-reject-arguments/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/utils-reject-arguments/main/LICENSE
+
+<!-- <related-links> -->
+
+[@stdlib/utils/filter-arguments]: https://github.com/stdlib-js/utils-filter-arguments
+
+[@stdlib/utils/mask-arguments]: https://github.com/stdlib-js/utils-mask-arguments
+
+<!-- </related-links> -->
 
 </section>
 
