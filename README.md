@@ -54,6 +54,11 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
+rejectArguments = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-reject-arguments@umd/browser.js' )
+```
+The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/utils-reject-arguments/tags). For example,
+
+```javascript
 rejectArguments = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-reject-arguments@v0.2.1-umd/browser.js' )
 ```
 
@@ -66,7 +71,7 @@ var rejectArguments = require( 'path/to/vendor/umd/utils-reject-arguments/index.
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-reject-arguments@v0.2.1-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-reject-arguments@umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -164,7 +169,7 @@ var out = bar( 1, 2, 3 );
 <body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-filled-by@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-ops-add@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-reject-arguments@v0.2.1-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-reject-arguments@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
